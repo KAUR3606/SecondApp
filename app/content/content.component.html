@@ -1,0 +1,26 @@
+<section class= "gridArea">
+    <div class= "imgArea common">
+    <img src= "assets/images/3.jpg" width="150px">
+</div>
+<div class = "listArea common">
+    <h3>My StudentInfo:</h3>
+    <ul>
+        <li>Name: enter your name</li>
+        <li>Campus: Davis</li>
+        <li>Number: 991000000</li>
+        <li>Username: enter your username</li>
+    </ul>
+</div>
+<div class="inputArea">
+       <h3 on-mouseover= "mouse()"
+           (mouseout)="mouse2()">Data Binding Demonstration</h3>
+    <h3>Data Binding Demonstration</h3>
+    <p>{{city}}</p>
+    <input bind-placeholder = "city"
+    [(ngModel)] = "city">
+    <br><label><input bind-placeholder = "city">
+    </label><br><br>
+    <button (click)="clearCity()" [disabled] = "city === 'Bramton' ">Reset City</button>
+    <button (click)="resetCity()">Fix the city</button>
+</div>
+</section>

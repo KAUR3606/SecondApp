@@ -1,0 +1,18 @@
+<h1> Angular App / By: </h1>>
+<div *ngIf="appStatus">
+    <h2>{{appTitle}} to my website</h2>
+    <ul><li *ngFor="let lst of appList">{{lst.rank}}</li></ul></div>
+    <div [ngSwitch]="carSelection">
+        <p *ngSwitchCase="'toyo'">Toyota</p>
+        <p *ngSwitchCase="'vw'">Volkswagon</p>
+        <p *ngSwitchCase="'bmw'">BMW</p>
+        <p *ngSwitchDefault>GM</p></div>
+
+        <div *ngIf="appStatus">
+        <div *ngFor="let lst of appList">
+            <div [ngSwitch]="lst.country">
+                <span *ngSwitchCase="'UK'">{{lst.rank}}</span>
+            <span *ngSwitchCase="'USA'">{{lst.rank}}</span>
+            <span *ngSwitchDefault>Default</span></div>
+        </div></div>
+    
