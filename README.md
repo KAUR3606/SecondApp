@@ -1,2 +1,2 @@
-# SecondApp
+# secondApp
 Will provide student details
